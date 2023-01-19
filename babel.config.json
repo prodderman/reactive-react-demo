@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-typescript", 
+      {
+        "allExtensions": true,
+        "allowDeclareFields": true,
+        "allowNamespaces": true,
+        "isTSX": true
+      }
+    ],
+    ["@babel/preset-react", {
+      "runtime": "automatic",
+      "development": false,
+      "importSource": "./libs/atom/react/jsx-runtime"
+    }],
+    "@babel/preset-env"
+  ]
+}
